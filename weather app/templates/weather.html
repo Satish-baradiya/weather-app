@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>Weather App</title>
+</head>
+<body>
+<table class="table table-striped">
+    <h1 style="text-align: center">Showing weather data of : {{ city }}</h1><br>
+    <thead>
+    <tr>
+        <th scope="col">Date</th>
+        <th scope="col">Average temperature</th>
+        <th scope="col">Rain</th>
+        <th scope="col">Wind Speed</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">{{ date }}</th>
+        <td>{{ temperature }} <sup>o</sup> celsius</td>
+        <td>{{ rain }} </td>
+        <td>{{ wind_speed }} km/hr</td>
+    </tr>
+
+    </tbody>
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
